@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>計算機功能</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="calculator.js"></script>
+</head>
+<body>
+  <div class="top-bar">
+    <a href="index.html" class="back-link">返回主頁</a>
+  </div>
+
+  <header>碳循環計算</header>
+
+  <div class="calculator">
+    <div class="section">
+      <h3>自然流入大氣的碳量(10億噸/年)：</h3>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="海洋到大氣">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="動物呼吸">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="腐敗分解產生的氣體">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="植物呼吸">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="化石燃料自然外洩以及分解">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="火山爆發">
+      </div>
+      <div>Total: <span class="total">0</span></div>
+    </div>
+
+    <div class="section">
+      <h3>自然流出大氣的碳量(10億噸/年)：</h3>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="大氣到海洋">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="光合作用">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="降水">
+      </div>
+      <div>Total: <span class="total">0</span></div>
+    </div>
+
+    <div class="section">
+      <h3>人類工業：流入到大氣的碳量(10億噸/年)：</h3>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="土地利用改變">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="化石燃料燃燒">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="製造水泥">
+      </div>
+      <div>Total: <span class="total">0</span></div>
+    </div>
+
+    <div class="section">
+      <h3>自然流出地殼與化石燃料流入大氣(10億噸/年)：</h3>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="火山爆發">
+      </div>
+      <div class="input-row">
+        <span class="label"></span>
+        <input type="number" step="0.01" class="input" placeholder="化石燃料自然外洩以及分解">
+      </div>
+      <div>Total: <span class="total">0</span></div>
+    </div>
+
+  </div>
+
+  <div class="photo-section">
+    <h4>照片展示：</h4>
+    <div class="card-gallery">
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front1.png" alt="front1.png"></div>
+          <div class="card-back"><img src="img1/back1.png" alt="back1.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front2.png" alt="front2.png"></div>
+          <div class="card-back"><img src="img1/back2.png" alt="back2.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front3.png" alt="front3.png"></div>
+          <div class="card-back"><img src="img1/back3.png" alt="back3.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front5.png" alt="front5.pn"></div>
+          <div class="card-back"><img src="img1/back5.png" alt="back5.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front7.png" alt="front7.png"></div>
+          <div class="card-back"><img src="img1/back7.png" alt="back7.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front8.png" alt="front8.png"></div>
+          <div class="card-back"><img src="img1/back8.png" alt="back8.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front9.png" alt="front9.png"></div>
+          <div class="card-back"><img src="img1/back9.png" alt="back9.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front10.png" alt="front10.png"></div>
+          <div class="card-back"><img src="img1/back10.png" alt="back10.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front16.png" alt="front16.png"></div>
+          <div class="card-back"><img src="img1/back16.png" alt="back16.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front17.png" alt="front17.png"></div>
+          <div class="card-back"><img src="img1/back17.png" alt="back17.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front18.png" alt="front18.png"></div>
+          <div class="card-back"><img src="img1/back18.png" alt="back18.png"></div>
+        </div>
+      </div>
+      <div class="card" onclick="flipCard(this)">
+        <div class="card-inner">
+          <div class="card-front"><img src="img1/front19.png" alt="front19.png"></div>
+          <div class="card-back"><img src="img1/back19.png" alt="back19.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
+
+
+
